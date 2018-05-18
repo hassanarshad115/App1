@@ -35,6 +35,8 @@ namespace App1
               {
                   clickButton.Text = string.Format("{0} clicks!", count++);
               };
+
+            //yha sy start
             Button b = FindViewById<Button>(Resource.Id.button1);
             b.Click += delegate
             {
@@ -48,7 +50,7 @@ namespace App1
                 EditText secondNumV = FindViewById<EditText>(Resource.Id.SecondNumeditText1);
 
                 decimal firstN =Convert.ToDecimal(firstNumV.Text);
-                decimal secondN = Convert.ToDecimal(secondNumV.Text);
+                decimal secondN = Convert.ToDecimal(secondNumV.Text); 
                 decimal result = firstN + secondN;
                 TextView resultV = FindViewById<TextView>(Resource.Id.ResulttextView1);
 
